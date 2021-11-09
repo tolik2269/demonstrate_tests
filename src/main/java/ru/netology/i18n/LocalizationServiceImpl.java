@@ -8,6 +8,7 @@ public class LocalizationServiceImpl implements LocalizationService {
         switch (country) {
             case RUSSIA:
                 return "Добро пожаловать";
+
             default:
                 return "Welcome";
         }
