@@ -14,13 +14,13 @@ public class GeoServicelmplTest {
     GeoService geoService = new GeoServiceImpl();
 
     @Test
-    public void testLocationIpRelatesToRussia() {
+    public void testLocation_IpRelates_ToRussia() {
         Location location = geoService.byIp(GeoServiceImpl.MOSCOW_IP);
         assertEquals(Country.RUSSIA, location.getCountry());
     }
 
     @Test
-    public void testLocationIpRelatesToUSA() {
+    public void testLocation_IpRelates_ToUSA() {
         Location location = geoService.byIp(GeoServiceImpl.NEW_YORK_IP);
         assertEquals(Country.USA, location.getCountry());
     }

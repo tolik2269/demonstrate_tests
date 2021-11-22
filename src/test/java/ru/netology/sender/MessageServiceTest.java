@@ -20,7 +20,7 @@ public class MessageServiceTest {
     GeoService geoService = mock(GeoService.class);
 
     @Test
-    public void testSentMessageLocaleIsRus() {
+    public void testSent_Message_LocaleIsRus() {
         reset(localizationService, geoService);
         Map headers = mock(Map.class);
         when(headers.get(anyString())).thenReturn("ip.address.of.the.russia");
@@ -37,7 +37,7 @@ public class MessageServiceTest {
     }
 
     @Test
-    public void testSentMessageLocaleIsEn() {
+    public void testSent_Message_LocaleIsEn() {
         reset(localizationService, geoService);
         Map headers = mock(Map.class);
         when(headers.get(anyString())).thenReturn("ip.address.of.the.usa");
